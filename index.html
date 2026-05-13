@@ -1,0 +1,126 @@
+<!-- Abel D Kuykendall -->
+<!-- CPROG       WPROG -->
+<!--     5/12/2026     -->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Birdbet.com</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/x-icon" href="/resources/SimplifiedLogo.png">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="header">
+            <div class="row gap">
+                <img id="logo" src="/resources/DetailedLogo.png">
+                <div class="column">
+                    <h1 id="title">Birdbet</h1>
+                    <p id="subtitle">Scratchoff Mode</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="reward-notification">
+            <div class="row">
+                <p>REWARD: You won <span class="money">$20.00</span></p>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container">
+                <div class="container-header">
+                    <img src="/resources/QuestionIcon.png" class="header-icon">
+                    <p>HOW TO PLAY?</p>
+                </div>
+                <div class="container-section">
+                    <h1>How to win:</h1>
+                    <p>Find 3 or more <span style="color: white; font-weight: 600;">Birds</span> in the 9x9 square</p>
+                    <img class="section-image" src="/resources/Birds.png">
+                </div>
+                <div class="container-section">
+                    <h1>Controls:</h1>
+                    <p>Click a square to reveal its item</p>
+                    <img class="section-image" src="/resources/Controls.png">
+                </div>
+                <div class="container-section">
+                    <h1>Play again?</h1>
+                    <p>Click the <span style="color: #1475E1; font-weight: 600;">"New Card"</span> button</p>
+                    <img class="section-image" src="/resources/RegenCard.png">
+                </div>
+            </div>
+
+            <div id="game">
+                <div class="card-wrapper">
+                    <img id="card" src="/resources/Card.png">
+                    <img id="card-text" src="/resources/CardText.png">
+                    <div id="card-tiles">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-1">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-2">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-3">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-4">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-5">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-6">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-7">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-8">
+                        <img src="/resources/tiles/default.png" class="tile" id="tile-9">
+                    </div>
+                </div>
+                <div id="new-card">
+                    <img class="spin-icon" src="/resources/SpinIcon.png">
+                    New Card
+                </div>
+                <div id="ticket-price">
+                    <p>Ticket Price:</p>
+                    <p class="money">$5.00</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="container-header">
+                    <img src="/resources/RewardIcon.png" class="header-icon">
+                    <p>REWARDS</p>
+                </div>
+                <div id="rewards">
+                    <div class="reward-item">
+                        <p>3 birds</p>
+                        <p2>$20.00</p2>
+                    </div>
+                    <div class="reward-item">
+                        <p>4 birds</p>
+                        <p2>$27.50</p2>
+                    </div>
+                    <div class="reward-item">
+                        <p>5, 6, 7 birds</p>
+                        <p2>$50.00</p2>
+                    </div>
+                    <div class="reward-item">
+                        <p>8 birds</p>
+                        <p2>$250.00</p2>
+                    </div>
+                    <div class="reward-item">
+                        <p>9 birds</p>
+                        <p2>$500.00</p2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>
