@@ -4,6 +4,7 @@
         5/12/2026
 */
 
+const tilesContainer = document.getElementById("card-tiles");
 const tiles = document.querySelectorAll(".tile");
 const newCardButton = document.getElementById("new-card");
 const rewardNotification = document.getElementById("reward-notification");
@@ -40,6 +41,9 @@ function generateCard(){
 
         tileResults.push(randomTile);
     });
+    setTimeout(() => {
+        tilesContainer.style.opacity = "1";
+    }, 1000);
 }
 
 function revealTile(ele){
@@ -51,8 +55,7 @@ function revealTile(ele){
         return;
     }
 
-    const index =
-        Number(ele.id.split("-")[1]) - 1;
+    const index = Number(ele.id.split("-")[1]) - 1;
 
     ele.dataset.revealed = "true";
 
@@ -126,6 +129,7 @@ tiles.forEach((tile) => {
 });
 
 newCardButton.addEventListener("click", () => {
+    tilesContainer.style.opacity = "0";
     generateCard();
 });
 
